@@ -1,0 +1,14 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt   -part iCE40HX1K  -package VQ100    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\synlog\report\INPUTSLUT3_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.edf   -autoconstraint  -freq 1.000   C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\synwork\INPUTSLUT3_prem.srd  -sap  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.sap  -otap  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.tap  -omap  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.map  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -sap  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.sap  -ologparam  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\syntmp\INPUTSLUT3.plg  -osyn  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.srm  -prjdir  C:\Users\tapiw\Documents\INPUTSLUT3\  -prjname  INPUTSLUT3_syn  -log  C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\synlog\INPUTSLUT3_fpga_mapper.srr 
+rc:0 success:1 runtime:1
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.edf|io:o|time:1712408050|size:6154|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\synwork\INPUTSLUT3_prem.srd|io:i|time:1712408049|size:1612|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.sap|io:o|time:1712408049|size:121|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.tap|io:o|time:0|size:0|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.map|io:o|time:1712408050|size:28|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1711248553|size:224837|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.sap|io:o|time:1712408049|size:121|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\syntmp\INPUTSLUT3.plg|io:o|time:1712408050|size:252|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\INPUTSLUT3.srm|io:o|time:1712408050|size:7117|exec:0
+file:C:\Users\tapiw\Documents\INPUTSLUT3\INPUTSLUT3_Implmnt\synlog\INPUTSLUT3_fpga_mapper.srr|io:o|time:1712408050|size:7422|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\m_generic.exe|io:i|time:1711248551|size:17853440|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe|io:i|time:1711248552|size:32355840|exec:1

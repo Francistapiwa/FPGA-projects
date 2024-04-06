@@ -1,0 +1,4 @@
+OUTPUT o_LED_1 	 location (13, 6, 1) 	 56 	 
+INPUT  i_Switch_C 	 location (0, 4, 0) 	 21 	 
+INPUT  i_Switch_B 	 location (0, 6, 0) 	 19 	 
+INPUT  i_Switch_A 	 location (0, 2, 0) 	 25 	 

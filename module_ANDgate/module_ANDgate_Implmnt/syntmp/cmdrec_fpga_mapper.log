@@ -1,0 +1,14 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt   -part iCE40HX1K  -package VQ100    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synlog\report\module_ANDgate_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.edf   -autoconstraint  -freq 1.000   C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_prem.srd  -sap  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.sap  -otap  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.tap  -omap  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.map  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -sap  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.sap  -ologparam  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\syntmp\module_ANDgate.plg  -osyn  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.srm  -prjdir  C:\Users\tapiw\Documents\module_ANDgate\  -prjname  module_ANDgate_syn  -log  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synlog\module_ANDgate_fpga_mapper.srr 
+rc:0 success:1 runtime:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.edf|io:o|time:1712404576|size:5596|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_prem.srd|io:i|time:1712404576|size:1417|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.sap|io:o|time:1712404576|size:125|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.tap|io:o|time:0|size:0|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.map|io:o|time:1712404576|size:28|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1711248553|size:224837|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.sap|io:o|time:1712404576|size:125|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\syntmp\module_ANDgate.plg|io:o|time:1712404576|size:277|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\module_ANDgate.srm|io:o|time:1712404576|size:6554|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synlog\module_ANDgate_fpga_mapper.srr|io:o|time:1712404576|size:7455|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\m_generic.exe|io:i|time:1711248551|size:17853440|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe|io:i|time:1711248552|size:32355840|exec:1

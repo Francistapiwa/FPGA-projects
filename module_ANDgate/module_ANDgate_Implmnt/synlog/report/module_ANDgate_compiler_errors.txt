@@ -1,0 +1,2 @@
+@E: CG829 :"C:\Users\tapiw\Documents\module AND_Gate_Project(.v":5:0:5:0|Unexpected ) after comma -- missing port in ANSI port list
+

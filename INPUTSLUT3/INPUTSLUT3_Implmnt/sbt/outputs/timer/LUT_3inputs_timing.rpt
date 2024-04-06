@@ -1,0 +1,476 @@
+# ******************************************************************************
+
+# iCEcube Static Timer
+
+# Version:            2020.12.27943
+
+# Build Date:         Dec  9 2020 17:33:20
+
+# File Generated:     Apr 6 2024 08:54:15
+
+# Purpose:            Timing Report with critical paths info
+
+# Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+# ******************************************************************************
+
+Device: iCE40HX1K
+Derating factors (Best:Typical:Worst) :-  ( 0.563724 : 0.623363 : 0.701346 )
+Derating factor used to generate this timing report:  Worst
+Based on the following operating conditions 
+Junction Temperature(degree Celsius): 85
+Core Voltage(V): 1.14
+Process Corner:  Worst
+NOTE:
+Please check both worst-case and best-case scenarios for "Setup Times" 
+and "Hold Times" checks
+Maximum Operating Frequency is: N/A
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+                        3.1::Setup Times
+                        ----------------
+
+Data Port  Clock Port  Setup Times  Clock Reference:Phase  
+---------  ----------  -----------  ---------------------  
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Data Port  Clock Port  Clock to Out  Clock Reference:Phase  
+---------  ----------  ------------  ---------------------  
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Input)  Port Name (Output)  Pad to Pad  
+-----------------  ------------------  ----------  
+i_Switch_B         o_LED_1             8952        
+i_Switch_A         o_LED_1             8819        
+i_Switch_C         o_LED_1             8202        
+
+
+                         3.4::Hold Times
+                         ---------------
+
+Data Port  Clock Port  Hold Times  Clock Reference:Phase  
+---------  ----------  ----------  ---------------------  
+
+
+               3.5::Minimum Clock to Out
+               -------------------------
+
+Data Port  Clock Port  Minimum Clock to Out  Clock Reference:Phase  
+---------  ----------  --------------------  ---------------------  
+
+
+                 3.6::Minimum Pad To Pad
+                 -----------------------
+
+Port Name (Input)  Port Name (Output)  Minimum Pad To Pad  
+-----------------  ------------------  ------------------  
+i_Switch_C         o_LED_1             7515                
+i_Switch_A         o_LED_1             8167                
+i_Switch_B         o_LED_1             8265                
+
+ =====================================================================
+                    End of Datasheet Report
+ #####################################################################
+
+ #####################################################################
+                    6::Path Details for DataSheet
+ =====================================================================
+
+
+6.3::PI to PO Path Details              
+--------------------------------------------------
+
+6.3.1::Path details for port: o_LED_1   
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_B
+Pad to Pad Delay : 8952
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_B                           LUT_3inputs                0      0                  RISE  1       
+i_Switch_B_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+i_Switch_B_ibuf_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+i_Switch_B_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+i_Switch_B_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     617    1127               RISE  1       
+I__20/I                              Odrv4                      0      1127               RISE  1       
+I__20/O                              Odrv4                      351    1478               RISE  1       
+I__21/I                              Span4Mux_v                 0      1478               RISE  1       
+I__21/O                              Span4Mux_v                 351    1829               RISE  1       
+I__22/I                              LocalMux                   0      1829               RISE  1       
+I__22/O                              LocalMux                   330    2158               RISE  1       
+I__23/I                              InMux                      0      2158               RISE  1       
+I__23/O                              InMux                      259    2418               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in0        LogicCell40_SEQ_MODE_0000  0      2418               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  449    2867               RISE  1       
+I__8/I                               Odrv4                      0      2867               RISE  1       
+I__8/O                               Odrv4                      351    3217               RISE  1       
+I__9/I                               Span4Mux_h                 0      3217               RISE  1       
+I__9/O                               Span4Mux_h                 302    3519               RISE  1       
+I__10/I                              Span4Mux_s3_h              0      3519               RISE  1       
+I__10/O                              Span4Mux_s3_h              231    3750               RISE  1       
+I__11/I                              IoSpan4Mux                 0      3750               RISE  1       
+I__11/O                              IoSpan4Mux                 288    4038               RISE  1       
+I__12/I                              LocalMux                   0      4038               RISE  1       
+I__12/O                              LocalMux                   330    4367               RISE  1       
+I__13/I                              IoInMux                    0      4367               RISE  1       
+I__13/O                              IoInMux                    259    4627               RISE  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      4627               RISE  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2237   6864               FALL  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      6864               FALL  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     2088   8952               FALL  1       
+o_LED_1                              LUT_3inputs                0      8952               FALL  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_A
+Pad to Pad Delay : 8819
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_A                           LUT_3inputs                0      0                  RISE  1       
+i_Switch_A_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+i_Switch_A_ibuf_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+i_Switch_A_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+i_Switch_A_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     617    1127               RISE  1       
+I__14/I                              Odrv4                      0      1127               RISE  1       
+I__14/O                              Odrv4                      351    1478               RISE  1       
+I__15/I                              Span4Mux_v                 0      1478               RISE  1       
+I__15/O                              Span4Mux_v                 351    1829               RISE  1       
+I__16/I                              LocalMux                   0      1829               RISE  1       
+I__16/O                              LocalMux                   330    2158               RISE  1       
+I__17/I                              InMux                      0      2158               RISE  1       
+I__17/O                              InMux                      259    2418               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in3        LogicCell40_SEQ_MODE_0000  0      2418               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  316    2733               RISE  1       
+I__8/I                               Odrv4                      0      2733               RISE  1       
+I__8/O                               Odrv4                      351    3084               RISE  1       
+I__9/I                               Span4Mux_h                 0      3084               RISE  1       
+I__9/O                               Span4Mux_h                 302    3386               RISE  1       
+I__10/I                              Span4Mux_s3_h              0      3386               RISE  1       
+I__10/O                              Span4Mux_s3_h              231    3617               RISE  1       
+I__11/I                              IoSpan4Mux                 0      3617               RISE  1       
+I__11/O                              IoSpan4Mux                 288    3905               RISE  1       
+I__12/I                              LocalMux                   0      3905               RISE  1       
+I__12/O                              LocalMux                   330    4234               RISE  1       
+I__13/I                              IoInMux                    0      4234               RISE  1       
+I__13/O                              IoInMux                    259    4494               RISE  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      4494               RISE  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2237   6731               FALL  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      6731               FALL  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     2088   8819               FALL  1       
+o_LED_1                              LUT_3inputs                0      8819               FALL  1       
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_C
+Pad to Pad Delay : 8202
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_C                           LUT_3inputs                0      0                  RISE  1       
+i_Switch_C_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  RISE  1       
+i_Switch_C_ibuf_iopad/DOUT           IO_PAD                     510    510                RISE  1       
+i_Switch_C_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      510                RISE  1       
+i_Switch_C_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     617    1127               RISE  1       
+I__18/I                              LocalMux                   0      1127               RISE  1       
+I__18/O                              LocalMux                   330    1457               RISE  1       
+I__19/I                              InMux                      0      1457               RISE  1       
+I__19/O                              InMux                      259    1716               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in1        LogicCell40_SEQ_MODE_0000  0      1716               RISE  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  400    2116               RISE  1       
+I__8/I                               Odrv4                      0      2116               RISE  1       
+I__8/O                               Odrv4                      351    2467               RISE  1       
+I__9/I                               Span4Mux_h                 0      2467               RISE  1       
+I__9/O                               Span4Mux_h                 302    2768               RISE  1       
+I__10/I                              Span4Mux_s3_h              0      2768               RISE  1       
+I__10/O                              Span4Mux_s3_h              231    3000               RISE  1       
+I__11/I                              IoSpan4Mux                 0      3000               RISE  1       
+I__11/O                              IoSpan4Mux                 288    3287               RISE  1       
+I__12/I                              LocalMux                   0      3287               RISE  1       
+I__12/O                              LocalMux                   330    3617               RISE  1       
+I__13/I                              IoInMux                    0      3617               RISE  1       
+I__13/O                              IoInMux                    259    3876               RISE  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      3876               RISE  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2237   6114               FALL  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      6114               FALL  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     2088   8202               FALL  1       
+o_LED_1                              LUT_3inputs                0      8202               FALL  1       
+
+6.6::Min PI to PO Path Details          
+--------------------------------------------------
+
+6.6.1::Path details for port: o_LED_1   
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_C
+Pad to Pad Delay : 7515
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_C                           LUT_3inputs                0      0                  FALL  1       
+i_Switch_C_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+i_Switch_C_ibuf_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+i_Switch_C_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+i_Switch_C_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     463    923                FALL  1       
+I__18/I                              LocalMux                   0      923                FALL  1       
+I__18/O                              LocalMux                   309    1231               FALL  1       
+I__19/I                              InMux                      0      1231               FALL  1       
+I__19/O                              InMux                      217    1449               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in1        LogicCell40_SEQ_MODE_0000  0      1449               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  379    1828               FALL  1       
+I__8/I                               Odrv4                      0      1828               FALL  1       
+I__8/O                               Odrv4                      372    2199               FALL  1       
+I__9/I                               Span4Mux_h                 0      2199               FALL  1       
+I__9/O                               Span4Mux_h                 316    2515               FALL  1       
+I__10/I                              Span4Mux_s3_h              0      2515               FALL  1       
+I__10/O                              Span4Mux_s3_h              231    2746               FALL  1       
+I__11/I                              IoSpan4Mux                 0      2746               FALL  1       
+I__11/O                              IoSpan4Mux                 323    3069               FALL  1       
+I__12/I                              LocalMux                   0      3069               FALL  1       
+I__12/O                              LocalMux                   309    3378               FALL  1       
+I__13/I                              IoInMux                    0      3378               FALL  1       
+I__13/O                              IoInMux                    217    3595               FALL  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      3595               FALL  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2006   5601               RISE  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      5601               RISE  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     1914   7515               RISE  1       
+o_LED_1                              LUT_3inputs                0      7515               RISE  1       
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_A
+Pad to Pad Delay : 8167
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_A                           LUT_3inputs                0      0                  FALL  1       
+i_Switch_A_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+i_Switch_A_ibuf_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+i_Switch_A_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+i_Switch_A_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     463    923                FALL  1       
+I__14/I                              Odrv4                      0      923                FALL  1       
+I__14/O                              Odrv4                      372    1295               FALL  1       
+I__15/I                              Span4Mux_v                 0      1295               FALL  1       
+I__15/O                              Span4Mux_v                 372    1666               FALL  1       
+I__16/I                              LocalMux                   0      1666               FALL  1       
+I__16/O                              LocalMux                   309    1975               FALL  1       
+I__17/I                              InMux                      0      1975               FALL  1       
+I__17/O                              InMux                      217    2192               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in3        LogicCell40_SEQ_MODE_0000  0      2192               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  288    2480               FALL  1       
+I__8/I                               Odrv4                      0      2480               FALL  1       
+I__8/O                               Odrv4                      372    2852               FALL  1       
+I__9/I                               Span4Mux_h                 0      2852               FALL  1       
+I__9/O                               Span4Mux_h                 316    3167               FALL  1       
+I__10/I                              Span4Mux_s3_h              0      3167               FALL  1       
+I__10/O                              Span4Mux_s3_h              231    3399               FALL  1       
+I__11/I                              IoSpan4Mux                 0      3399               FALL  1       
+I__11/O                              IoSpan4Mux                 323    3721               FALL  1       
+I__12/I                              LocalMux                   0      3721               FALL  1       
+I__12/O                              LocalMux                   309    4030               FALL  1       
+I__13/I                              IoInMux                    0      4030               FALL  1       
+I__13/O                              IoInMux                    217    4247               FALL  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      4247               FALL  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2006   6253               RISE  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      6253               RISE  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     1914   8167               RISE  1       
+o_LED_1                              LUT_3inputs                0      8167               RISE  1       
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : o_LED_1
+Input Port       : i_Switch_B
+Pad to Pad Delay : 8265
+
+Pad to Pad Path
+pin name                             model name                 delay  cummulative delay  edge  Fanout  
+-----------------------------------  -------------------------  -----  -----------------  ----  ------  
+i_Switch_B                           LUT_3inputs                0      0                  FALL  1       
+i_Switch_B_ibuf_iopad/PACKAGEPIN:in  IO_PAD                     0      0                  FALL  1       
+i_Switch_B_ibuf_iopad/DOUT           IO_PAD                     460    460                FALL  1       
+i_Switch_B_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001     0      460                FALL  1       
+i_Switch_B_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001     463    923                FALL  1       
+I__20/I                              Odrv4                      0      923                FALL  1       
+I__20/O                              Odrv4                      372    1295               FALL  1       
+I__21/I                              Span4Mux_v                 0      1295               FALL  1       
+I__21/O                              Span4Mux_v                 372    1666               FALL  1       
+I__22/I                              LocalMux                   0      1666               FALL  1       
+I__22/O                              LocalMux                   309    1975               FALL  1       
+I__23/I                              InMux                      0      1975               FALL  1       
+I__23/O                              InMux                      217    2192               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/in0        LogicCell40_SEQ_MODE_0000  0      2192               FALL  1       
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000  386    2578               FALL  1       
+I__8/I                               Odrv4                      0      2578               FALL  1       
+I__8/O                               Odrv4                      372    2950               FALL  1       
+I__9/I                               Span4Mux_h                 0      2950               FALL  1       
+I__9/O                               Span4Mux_h                 316    3265               FALL  1       
+I__10/I                              Span4Mux_s3_h              0      3265               FALL  1       
+I__10/O                              Span4Mux_s3_h              231    3497               FALL  1       
+I__11/I                              IoSpan4Mux                 0      3497               FALL  1       
+I__11/O                              IoSpan4Mux                 323    3819               FALL  1       
+I__12/I                              LocalMux                   0      3819               FALL  1       
+I__12/O                              LocalMux                   309    4128               FALL  1       
+I__13/I                              IoInMux                    0      4128               FALL  1       
+I__13/O                              IoInMux                    217    4345               FALL  1       
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001     0      4345               FALL  1       
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001     2006   6351               RISE  1       
+o_LED_1_obuf_iopad/DIN               IO_PAD                     0      6351               RISE  1       
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                     1914   8265               RISE  1       
+o_LED_1                              LUT_3inputs                0      8265               RISE  1       
+
+
+ =====================================================================
+                    End of Path Details for Datasheet
+ #####################################################################
+
+##################################################################### 
+                    Detailed Setup Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_Switch_A
+Path End         : o_LED_1
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)      0
++ Launch Clock Source Latency                0
++ Input Delay                                0
++ Data Path Delay                         8623
+---------------------------------------   ---- 
+End-of-path arrival time (ps)             8623
+ 
+Data path
+pin name                             model name                 delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+i_Switch_A                           LUT_3inputs                    0                 0   +INF  RISE       1
+i_Switch_A_ibuf_iopad/PACKAGEPIN:in  IO_PAD                         0                 0   +INF  RISE       1
+i_Switch_A_ibuf_iopad/DOUT           IO_PAD                       510               510   +INF  RISE       1
+i_Switch_A_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
+i_Switch_A_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001       463               973   +INF  FALL       1
+I__14/I                              Odrv4                          0               973   +INF  FALL       1
+I__14/O                              Odrv4                        372              1345   +INF  FALL       1
+I__15/I                              Span4Mux_v                     0              1345   +INF  FALL       1
+I__15/O                              Span4Mux_v                   372              1716   +INF  FALL       1
+I__16/I                              LocalMux                       0              1716   +INF  FALL       1
+I__16/O                              LocalMux                     309              2025   +INF  FALL       1
+I__17/I                              InMux                          0              2025   +INF  FALL       1
+I__17/O                              InMux                        217              2242   +INF  FALL       1
+o_LED_1_obuf_RNO_LC_1_4_0/in3        LogicCell40_SEQ_MODE_0000      0              2242   +INF  FALL       1
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000    288              2530   +INF  FALL       1
+I__8/I                               Odrv4                          0              2530   +INF  FALL       1
+I__8/O                               Odrv4                        372              2902   +INF  FALL       1
+I__9/I                               Span4Mux_h                     0              2902   +INF  FALL       1
+I__9/O                               Span4Mux_h                   316              3217   +INF  FALL       1
+I__10/I                              Span4Mux_s3_h                  0              3217   +INF  FALL       1
+I__10/O                              Span4Mux_s3_h                231              3449   +INF  FALL       1
+I__11/I                              IoSpan4Mux                     0              3449   +INF  FALL       1
+I__11/O                              IoSpan4Mux                   323              3771   +INF  FALL       1
+I__12/I                              LocalMux                       0              3771   +INF  FALL       1
+I__12/O                              LocalMux                     309              4080   +INF  FALL       1
+I__13/I                              IoInMux                        0              4080   +INF  FALL       1
+I__13/O                              IoInMux                      217              4297   +INF  FALL       1
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001         0              4297   +INF  FALL       1
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001      2237              6535   +INF  FALL       1
+o_LED_1_obuf_iopad/DIN               IO_PAD                         0              6535   +INF  FALL       1
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                      2088              8623   +INF  FALL       1
+o_LED_1                              LUT_3inputs                    0              8623   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Setup Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    Detailed Hold Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_Switch_A
+Path End         : o_LED_1
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)      0
++ Launch Clock Source Latency                0
++ Input Delay                                0
++ Data Path Delay                         8623
+---------------------------------------   ---- 
+End-of-path arrival time (ps)             8623
+ 
+Data path
+pin name                             model name                 delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  -------------------------  -----  ----------------  -----  ----  ------
+i_Switch_A                           LUT_3inputs                    0                 0   +INF  RISE       1
+i_Switch_A_ibuf_iopad/PACKAGEPIN:in  IO_PAD                         0                 0   +INF  RISE       1
+i_Switch_A_ibuf_iopad/DOUT           IO_PAD                       510               510   +INF  RISE       1
+i_Switch_A_ibuf_preio/PADIN          PRE_IO_PIN_TYPE_000001         0               510   +INF  RISE       1
+i_Switch_A_ibuf_preio/DIN0           PRE_IO_PIN_TYPE_000001       463               973   +INF  FALL       1
+I__14/I                              Odrv4                          0               973   +INF  FALL       1
+I__14/O                              Odrv4                        372              1345   +INF  FALL       1
+I__15/I                              Span4Mux_v                     0              1345   +INF  FALL       1
+I__15/O                              Span4Mux_v                   372              1716   +INF  FALL       1
+I__16/I                              LocalMux                       0              1716   +INF  FALL       1
+I__16/O                              LocalMux                     309              2025   +INF  FALL       1
+I__17/I                              InMux                          0              2025   +INF  FALL       1
+I__17/O                              InMux                        217              2242   +INF  FALL       1
+o_LED_1_obuf_RNO_LC_1_4_0/in3        LogicCell40_SEQ_MODE_0000      0              2242   +INF  FALL       1
+o_LED_1_obuf_RNO_LC_1_4_0/lcout      LogicCell40_SEQ_MODE_0000    288              2530   +INF  FALL       1
+I__8/I                               Odrv4                          0              2530   +INF  FALL       1
+I__8/O                               Odrv4                        372              2902   +INF  FALL       1
+I__9/I                               Span4Mux_h                     0              2902   +INF  FALL       1
+I__9/O                               Span4Mux_h                   316              3217   +INF  FALL       1
+I__10/I                              Span4Mux_s3_h                  0              3217   +INF  FALL       1
+I__10/O                              Span4Mux_s3_h                231              3449   +INF  FALL       1
+I__11/I                              IoSpan4Mux                     0              3449   +INF  FALL       1
+I__11/O                              IoSpan4Mux                   323              3771   +INF  FALL       1
+I__12/I                              LocalMux                       0              3771   +INF  FALL       1
+I__12/O                              LocalMux                     309              4080   +INF  FALL       1
+I__13/I                              IoInMux                        0              4080   +INF  FALL       1
+I__13/O                              IoInMux                      217              4297   +INF  FALL       1
+o_LED_1_obuf_preio/DOUT0             PRE_IO_PIN_TYPE_011001         0              4297   +INF  FALL       1
+o_LED_1_obuf_preio/PADOUT            PRE_IO_PIN_TYPE_011001      2237              6535   +INF  FALL       1
+o_LED_1_obuf_iopad/DIN               IO_PAD                         0              6535   +INF  FALL       1
+o_LED_1_obuf_iopad/PACKAGEPIN:out    IO_PAD                      2088              8623   +INF  FALL       1
+o_LED_1                              LUT_3inputs                    0              8623   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Hold Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    End of Timing Report 
+##################################################################### 
+

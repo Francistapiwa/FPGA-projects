@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_comp.srs  -osyn  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_mult.srs  -log  C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synlog\module_ANDgate_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_comp.srs|io:i|time:1712404574|size:1451|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synwork\module_ANDgate_mult.srs|io:o|time:1712404575|size:1201|exec:0
+file:C:\Users\tapiw\Documents\module_ANDgate\module_ANDgate_Implmnt\synlog\module_ANDgate_multi_srs_gen.srr|io:o|time:1712404575|size:842|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1711248552|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1711248553|size:3947520|exec:1
